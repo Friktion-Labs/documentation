@@ -1,0 +1,664 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Typescript SDK · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="deposit.html" />
+    
+    
+    <link rel="prev" href="../overview.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">💿 Friktion Protocol</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Shutdown - Please withdraw immediately!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../protocol/security.html">
+            
+                <a href="../../protocol/security.html">
+            
+                    
+                    🔐 Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../protocol/programs.html">
+            
+                <a href="../../protocol/programs.html">
+            
+                    
+                    Programs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../protocol/developer-resources.html">
+            
+                <a href="../../protocol/developer-resources.html">
+            
+                    
+                    👩💻 Developer Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">🙌 Integration</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../overview.html">
+            
+                <a href="../overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Typescript SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="deposit.html">
+            
+                <a href="deposit.html">
+            
+                    
+                    Deposit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="withdraw.html">
+            
+                <a href="withdraw.html">
+            
+                    
+                    Withdraw
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="load-balances.html">
+            
+                <a href="load-balances.html">
+            
+                    
+                    Load Balances
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../open-sourced-ui.html">
+            
+                <a href="../open-sourced-ui.html">
+            
+                    
+                    Open-Sourced UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Links</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <a target="_blank" href="https://friktion.fi">
+            
+                    
+                    Website
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <a target="_blank" href="https://www.twitter.com/friktion/_labs">
+            
+                    
+                    Twitter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../links/terms-of-service.html">
+            
+                <a href="../../links/terms-of-service.html">
+            
+                    
+                    Terms of Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <a target="_blank" href="https://discord.gg/friktion">
+            
+                    
+                    Discord
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Typescript SDK</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="typescript-sdk">Typescript SDK</h1>
+<p>NPM package at <a href="https://www.npmjs.com/package/@friktion-labs/friktion-sdk" target="_blank">https://www.npmjs.com/package/@friktion-labs/friktion-sdk</a></p>
+<p>Open source repository at <a href="https://github.com/Friktion-Labs/sdk" target="_blank">https://github.com/Friktion-Labs/sdk</a></p>
+<p>Source code for all examples: <a href="https://github.com/Friktion-Labs/sdk/tree/master/examples" target="_blank">https://github.com/Friktion-Labs/sdk/tree/master/examples</a></p>
+<h3 id="basic-setup">Basic Setup</h3>
+<h4 id="1-install-friktion-sdk-from-npm">1. Install Friktion SDK <a href="https://www.npmjs.com/package/@friktion-labs/friktion-sdk" target="_blank">from NPM</a></h4>
+<p>Friktion requires a minimum of <a href="https://nodejs.org/en/" target="_blank">Node.js 16</a> </p>
+<p><code>yarn add @friktion-labs/friktion-sdk</code></p>
+<h4 id="2-load-friktion--volt-sdk-instance">2. Load Friktion &amp; Volt SDK Instance</h4>
+<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> {
+  <span class="hljs-comment">// sdk WITHOUT a user wallet attached</span>
+  VoltSDK,
+  <span class="hljs-comment">// sdk WITH a user wallet attached</span>
+  toConnectedSDK,
+  FriktionSDK,
+} from <span class="hljs-string">&quot;@friktion-labs/friktion-sdk&quot;</span>;
+
+<span class="hljs-comment">// SOL Covered Call Volt pubkey</span>
+<span class="hljs-keyword">const</span> voltVaultId = <span class="hljs-keyword">new</span> PublicKey(
+  <span class="hljs-string">&quot;CbPemKEEe7Y7YgBmYtFaZiECrVTP5sGrYzrrrviSewKY&quot;</span>
+);
+
+<span class="hljs-keyword">const</span> friktionSDK: FriktionSDK = <span class="hljs-keyword">new</span> FriktionSDK({
+  provider: provider, <span class="hljs-comment">// e.g AnchorProvider</span>
+  network: CLUSTER, <span class="hljs-comment">// e.g mainnet-beta</span>
+});
+
+<span class="hljs-comment">// loads a volt SDK based on the VoltVault account pubkey</span>
+<span class="hljs-comment">// friktionSDK.loadShortOptionsVoltSDKByKey to load a ShortOptionsVoltSDK</span>
+<span class="hljs-comment">// friktionSDK.loadEntropyVoltSDKByKey to load an EntropyVoltSDK</span>
+<span class="hljs-keyword">const</span> voltSdk = await friktionSDK.loadVoltAndExtraDataByKey(voltVaultId), <span class="hljs-comment">// friktionSdk.loadVolt(...) is a lightweight version of sdk with reduced functionality</span>
+
+
+<span class="hljs-comment">// creates a ConnectedSDK instance</span>
+<span class="hljs-comment">// toConnectedEntropySDK for getting a ConnectedEntropyVoltSDK (</span>
+<span class="hljs-keyword">const</span> cVoltSdk = toConnectedVoltSDK(
+  voltSdk,
+  connection, <span class="hljs-comment">// solana cluster connection</span>
+  user, <span class="hljs-comment">// generally, provider.wallet pubkey</span>
+  <span class="hljs-literal">undefined</span>, <span class="hljs-comment">// only used if depositing from a PDA or other program-owned account</span>
+);
+</code></pre>
+<p><strong>3. Use this reference package.json for example dependencies:</strong></p>
+<p><a href="https://github.com/Friktion-Labs/sdk/blob/master/examples/package.json" target="_blank">https://github.com/Friktion-Labs/sdk/blob/master/examples/package.json</a></p>
+<p>The SDK provides a method for each instruction, returning a <code>TransactionInstruction</code> object later to be included in a transaction.</p>
+<h3 id="deposit">Deposit</h3>
+<p>See a <a href="deposit.html">Full Deposit Example</a> for implementation details.</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">//// DEPOSIT EXAMPLE ////</span>
+
+<span class="hljs-comment">// depositing 0.00001 SOL</span>
+<span class="hljs-keyword">const</span> depositAmount: Decimal = <span class="hljs-keyword">new</span> Decimal(<span class="hljs-number">0.00001</span>);
+await cVoltSdk.doFullDeposit(depositAmount);
+</code></pre>
+<h3 id="withdraw">Withdraw</h3>
+<p>See a <a href="withdraw.html">Full Withdraw Example</a> for implementation details. Keep in mind that it is impossible to 100% accurately know the value of a volt before the epoch ends, and thus any withdrawal done mid-epoch is based on a (fairly accurate) estimate.</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">//// WITHDRAW EXAMPLE ////</span>
+
+<span class="hljs-comment">// withdrawing 0.00001 SOL</span>
+<span class="hljs-keyword">const</span> withdrawAmount: Decimal = <span class="hljs-keyword">new</span> Decimal(<span class="hljs-number">0.00001</span>);
+await cVoltSdk.doFullWithdraw(withdrawAmount); <span class="hljs-comment">// creates and send transactions</span>
+</code></pre>
+<h3 id="load-balances">Load Balances</h3>
+<p>See a <a href="load-balances.html">Full Example</a> for implementation details.</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> in below definitions, &apos;SOL&apos; would be replaced by the deposit token for that volt.</span>
+
+<span class="hljs-keyword">const</span> {
+    totalBalance, <span class="hljs-comment">// total # SOL user has in Friktion (e.g 0.001 SOL)</span>
+    normalBalance, <span class="hljs-comment">// SOL value of volt tokens in user&apos;s wallet</span>
+    pendingDeposits, <span class="hljs-comment">// SOL value of users&apos;s unclaimed and pending deposits</span>
+    pendingWithdrawals, <span class="hljs-comment">// SOL value of user&apos;s unclaimed and pending withdrawals</span>
+    mintableShares, <span class="hljs-comment">// # of volt tokens user could mint immediately</span>
+    claimableUnderlying, <span class="hljs-comment">// SOL value of user&apos;s *mintableShares*</span>
+    normFactor, <span class="hljs-comment">// 10^(number of decimals in SOL mint) = 10^9 for SOL, varies depending on deposit token</span>
+    vaultNormFactor, <span class="hljs-comment">// generally equivalent to normFactor, but may differ if deposit token was migrated (e.g sollet deprecation)</span>
+}  = await voltSdk.getBalancesForUser(user <span class="hljs-comment">// wallet pubkey or PDA);</span>
+</code></pre>
+<h3 id="calculate-profitslosses">Calculate Profits/Losses</h3>
+<p>See a <a href=".#calculate-epoch-reward">Full Example</a> for implementation details.</p>
+<p>This retrieves the pnl denominated in the <strong>deposit token</strong> of the volt. This can be accessed via <code>voltSdk.voltVault.depositMint</code>.  This feature is only supported after a certain epoch on each volt. For <strong>full historicals</strong> or <strong>user-specific PnL</strong> (like <a href="https://friktion.fi/portfolio/H6S9znd4mWtz3ug5wMt4yAzekKscbCfYkskCrc6y8uRr" target="_blank">this</a>), please ask in the <a href="https://discord.com/channels/891360797081632768/904575831844724736" target="_blank">#developers </a>channel in discord</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// denominated in deposit token.</span>
+<span class="hljs-comment">// e.g if the volt made $1000 in premium, SOL is worth $100, </span>
+<span class="hljs-keyword">const</span> epochPnl = await voltSdk.getPnlForEpoch(roundNumber)
+<span class="hljs-comment">// for SOL Call round 25, outputs 325.872 SOL.</span>
+</code></pre>
+<h3 id="calculate-tvl">Calculate TVL</h3>
+<p>This gets the <strong>TVL</strong> (total value locked) of a volt (all collateral under control of the volt&apos;s on-chain authorities).</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> tvl = await voltSdk.getTvlInDepositToken()
+</code></pre>
+<p>To convert to USD-demoninated TVL, simply multiply by the deposit token price (scraped from coingecko). Or, call the built-in function.</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> usdTvl = await voltSdk.getTvl();
+<span class="hljs-comment">// or:</span>
+<span class="hljs-comment">// const usdTvl = tvl.mul(await voltSdk.depositTokenPrice());VoltSDK vs. ConnectedVoltSDK</span>
+</code></pre>
+<p>For more detailed statistics about TVL, call <code>getTvlStats()</code></p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> {
+    tvl
+    usdTvl
+    strategyDeposits,
+    pendingDeposits,
+    pendingWithdrawals, <span class="hljs-comment">// SOL</span>
+  } = await voltSdk.getTvlStats();
+</code></pre>
+<h3 id="print-volt-details">Print Volt Details</h3>
+<p>To see the loaded volt&apos;s <strong>type, strategy, and name.</strong></p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> <span class="hljs-keyword">type</span>: VoltType = voltSdk.voltType() <span class="hljs-comment">// </span>
+<span class="hljs-comment">// export enum VoltType {</span>
+<span class="hljs-comment">//  ShortOptions = 0,</span>
+<span class="hljs-comment">//  Entropy = 1,</span>
+<span class="hljs-comment">// }</span>
+
+<span class="hljs-keyword">const</span> strategy: VoltStrategy = await voltSdk.voltStrategy()
+<span class="hljs-comment">// export enum VoltStrategy {</span>
+<span class="hljs-comment">//  ShortCalls,</span>
+<span class="hljs-comment">//  ShortPuts,</span>
+<span class="hljs-comment">//  ShortCrab,</span>
+<span class="hljs-comment">//  LongBasis,</span>
+<span class="hljs-comment">// }</span>
+
+<span class="hljs-keyword">const</span> voltNumber: <span class="hljs-built_in">number</span> = await voltSdk.voltNumber()
+<span class="hljs-comment">// ShortCalls =&gt; 1</span>
+<span class="hljs-comment">// ShortPuts =&gt; 2</span>
+<span class="hljs-comment">// ShortCrab =&gt; 3</span>
+<span class="hljs-comment">// LongBasis =&gt; 4</span>
+<span class="hljs-comment">//</span>
+
+<span class="hljs-keyword">const</span> name: <span class="hljs-built_in">string</span> = voltSdk.voltName()
+<span class="hljs-comment">// e.g Volt #01: Covered Call</span>
+</code></pre>
+<p>It&apos;s often useful to print more details of volt in order to visually interpret the current state (e.g stage of rebalancing, total TVL, </p>
+<pre><code class="lang-typescript">await voltSdk.printState();
+</code></pre>
+<p>Truncated output below. To see full output check out the example</p>
+<pre><code>-------------------------
+ ID: CbPemKEEe7Y7YgBmYtFaZiECrVTP5sGrYzrrrviSewKY
+-------------------------
+Volt #01: Covered Call
+volt 1 or 2
+returning...
+Short (Fri, 01 Jul 2022 02:00:00 GMT $0.019230769230769230769 PUT)
+
+-------------------------
+ HIGH LEVEL STATS
+-------------------------
+Total Value (minus pending deposits) (SOL):  159155.947477497 , ($):  6124320.85893408456
+deposit pool:  0.947477497
+premium pool:  0.535425 permissioned premium pool:  35795.55105
+
+...
+...
+</code></pre><h3 id="epoch-specific-information">Epoch-specific Information</h3>
+<p>Each Volt epoch contains valuable information about deposits/withdrawals, fees collected, PnL, and the rebalancing process.</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> currentRound = await voltSdk.getRoundByNumber(voltSdk.voltVault.roundNumber) <span class="hljs-comment">// Round account</span>
+<span class="hljs-keyword">const</span> currentRound2 = await voltSdk.getCurrentRound() <span class="hljs-comment">// equivalent to currentRound</span>
+<span class="hljs-keyword">const</span> currentEpochInfo = await voltSdk.getEpochInfoByNumber(voltSdk.voltVault.roundNumber) <span class="hljs-comment">// FriktionEpochInfo account</span>
+<span class="hljs-keyword">const</span> currentEpochInfo2 = await voltSdk.getCurrentEpochInfo() <span class="hljs-comment">// equivalent to currentEpochInfo</span>
+</code></pre>
+<p>To understand the fields on these account better, read the <a href="broken-reference">Global Accounts</a> section</p>
+<h3 id="estimate-fees">Estimate Fees</h3>
+<p>Performance fees can be easily calculated given an expected reward (denominated in deposit token).</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> totalReward = <span class="hljs-number">100</span> * voltSdk.getDepositTokenNormalizationFactor() <span class="hljs-comment">// 100 SOL in lamports</span>
+<span class="hljs-keyword">const</span> performanceFee = voltSdk.performanceFeeAmount(totalReward) <span class="hljs-comment">// 1000 bps = 10% * 100 SOL = 10 SOL = 10000000000 lamports</span>
+</code></pre>
+<p>while withdrawal fees require an estimation of the underlying received.</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> expectedWithdrawnUnderlying = <span class="hljs-number">100</span> * voltSdk.getDepositTokenNormalizationFactor() <span class="hljs-comment">// 100 SOL in lamports</span>
+<span class="hljs-keyword">const</span> withdrawalFee = voltSdk.withdrawalFeeAmount(expectedWithdrawnUnderlying) <span class="hljs-comment">// 10 bps = 0.1% * 100 SOL = 0.1 SOL = 100000000 lamports</span>
+</code></pre>
+<h3 id="alternative-strategy-tracking">Alternative Strategy Tracking</h3>
+<p>If there are operational difficulties with public volts, or if a Circuits volt requests to pause the current strategy, all Friktion volts can utilize a simple, low risk <strong>lending aggregator</strong>.</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> {tvlDepositToken, tvlUsd} = await voltSdk.getEntropyLendingTvl()
+</code></pre>
+<p>Entropy describes the set of exchanges + lending platforms that are based off the original <a href="https://mango.markets" target="_blank">Mango Markets</a> codebase. To view the lower-level objects used to calculate volt TVL in this set of lending platforms, see below.</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> { 
+    entropyGroup,
+    entropyAccount, 
+    entropyCache 
+} = await <span class="hljs-keyword">this</span>.getEntropyLendingObjects(); <span class="hljs-comment">// may fail if lending has not been initialized</span>
+</code></pre>
+<h3 id="load-all-volts-on-friktion-ui">Load All Volts on Friktion UI</h3>
+<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> friktionSdk = <span class="hljs-keyword">new</span> FriktionSDK({
+   provider: <span class="hljs-keyword">new</span> AnchorProvider(
+     <span class="hljs-keyword">new</span> Connection(<span class="hljs-string">&quot;https://api.mainnet-beta.solana.com&quot;</span>),
+     Wallet.local(),
+     {}
+   ), <span class="hljs-comment">// with mainnet RPC</span>
+   network: <span class="hljs-string">&apos;mainnet-beta&apos;</span>,
+});
+
+<span class="hljs-keyword">const</span> allMainnetVolts: VoltSDK[] = await friktionSdk.getAllVoltsInSnapshot();
+
+friktionSdk = <span class="hljs-keyword">new</span> FriktionSDK({
+   provider: <span class="hljs-keyword">new</span> AnchorProvider(
+     <span class="hljs-keyword">new</span> Connection(<span class="hljs-string">&quot;https://api.devnet.solana.com&quot;</span>),
+     Wallet.local(),
+     {}
+   ), <span class="hljs-comment">// with devnet RPC</span>
+   network: <span class="hljs-string">&apos;devnet&apos;</span>,
+});
+
+<span class="hljs-keyword">const</span> allDevnetVolts: VoltSDK[] = await friktionSdk.getAllVoltsInSnapshot();
+</code></pre>
+<h3 id="voltsdk-vs-shortoptionsentropy-voltsdk-vs-connectedvoltsdk">VoltSDK vs. ShortOptions/Entropy-VoltSDK vs. ConnectedVoltSDK</h3>
+<p><strong>VoltSDK</strong> is a generic wrapper around a single Friktion volt. Useful for retrieving accounts (e.g <a href="broken-reference">VoltVault, ExtraVoltData</a>) and calculating statistics. It is implemented as an abstract class. Each specific volt type extends <strong>VoltSDK</strong> to form their own SDK. <strong>ShortOptionsVoltSDK</strong> provides helper methods for interacting with <em>volt 1 &amp; 2,</em> while <strong>EntropyVoltSDK</strong> does the same for <em>volt 3 &amp; 4.</em> </p>
+<p><strong>ConnectedVoltSDK</strong> is an extension of <strong>VoltSDK</strong> tied to a specific user, and provides an API for creating any Friktion volt instruction using the provided wallet as an authority. It&apos;s also an abstract class, so requires a specific implementation given by <strong>ConnectedShortOptionsVoltSDK</strong> or <strong>ConnectedEntropyVoltSDK.</strong> Examples below:</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// VoltSDK</span>
+<span class="hljs-keyword">constructor</span>(
+    readonly sdk: FriktionSDK,
+    readonly voltVault: VoltVault,
+    readonly voltKey: PublicKey,
+    extraVoltData?: ExtraVoltData | undefined
+)
+</code></pre>
+<pre><code class="lang-typescript"><span class="hljs-comment">// ConnectedVoltSDK extends VoltSDK</span>
+<span class="hljs-keyword">constructor</span>(
+  voltSDK: VoltSDK,
+  connection: Connection,
+  user: PublicKey,
+  daoAuthority?: PublicKey | undefined
+)
+</code></pre>
+<pre><code class="lang-typescript"><span class="hljs-comment">// load ShortOptionsVoltSDK extends VoltSDK</span>
+<span class="hljs-keyword">const</span> solPutLowKey = <span class="hljs-keyword">new</span> PublicKey(<span class="hljs-string">&quot;2evPXRLaTZj92DM93sdryeszwqoC9C6DoWa1TKHn1AzU&quot;</span>);
+<span class="hljs-keyword">const</span> solPutLowShortOptionsSdk = await friktionSDK.loadShortOptionsVoltSDKByKey(solPutLowKey);
+
+<span class="hljs-comment">// convert to ConnectedShortOptionsVoltSDK extends (ConnectedVoltSDK &amp; ShortOptionsVoltSDK)</span>
+<span class="hljs-comment">// this inherits all methods from both parent classes</span>
+<span class="hljs-keyword">const</span> solPutLowConnectedSDK: ConnectedSDK = toConnectedSDK(
+    solPutLowShortOptionsSdk,
+    provider.connection,
+    provider.wallet
+);
+
+<span class="hljs-comment">// use short options specific helper to get the specific class type</span>
+<span class="hljs-keyword">const</span> solPutLowConnectedSDK: ConnectedShortOptionsVoltSDK = toConnectedShortOptionsSDK(
+    solPutLowShortOptionsSdk,
+    provider.connection,    
+    provider.wallet
+);
+
+
+<span class="hljs-keyword">const</span> solBasisKey = <span class="hljs-keyword">new</span> PublicKey(<span class="hljs-string">&quot;2yPs4YTdMzuKmYeubfNqH2xxgdEkXMxVcFWnAFbsojS2&quot;</span>);
+<span class="hljs-keyword">const</span> solBasisEntropySdk = await friktionSDK.loadEntropyVoltSDKByKey(solBasisKey);
+
+<span class="hljs-comment">// mirror methods toConnectedSDK and toConnectedEntropySDK</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../overview.html" class="navigation navigation-prev " aria-label="Previous page: Overview">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="deposit.html" class="navigation navigation-next " aria-label="Next page: Deposit">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Typescript SDK","level":"2.2","depth":1,"next":{"title":"Deposit","level":"2.2.1","depth":2,"path":"integration/typescript-sdk/deposit.md","ref":"integration/typescript-sdk/deposit.md","articles":[]},"previous":{"title":"Overview","level":"2.1","depth":1,"path":"integration/overview.md","ref":"integration/overview.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"integration/typescript-sdk/README.md","mtime":"2023-04-07T09:13:24.205Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-04-07T09:13:59.905Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
